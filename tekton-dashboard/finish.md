@@ -1,7 +1,13 @@
-# Interested in learning more about Tekton?
+# Additional resources
 
-Check out these resources!
+## Learn more about the Tekton Dashboard
 
-[Tekton Dashboard GitHub repository](https://github.com/tektoncd/dashboard)
+https://github.com/tektoncd/dashboard
 
-[Tekton Pipelines GitHub repository](https://github.com/tektoncd/pipeline)
+## Learn more about Tekton Pipelines
+
+https://github.com/tektoncd/pipeline
+
+## Get involved in the Tekton Community
+
+https://github.com/tektoncd/community#want-to-get-involved
