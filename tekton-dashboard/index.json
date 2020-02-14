@@ -6,13 +6,17 @@
   "details": {
     "steps": [
       {
-        "title": "Install and Configure the Tekton Dashboard",
+        "title": "Install the Tekton Dashboard",
         "text": "step1.md",
         "code": "init.sh"
       },
       {
-        "title": "Run Pipeline & Monitor the Progress",
+        "title": "Import Tekton Resources for MyApp",
         "text": "step2.md"
+      },
+      {
+        "title": "Build & Deploy MyApp",
+        "text": "step3.md"
       }
     ],
     "intro": {
