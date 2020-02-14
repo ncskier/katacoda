@@ -64,3 +64,5 @@ Verify the Ingress was created:
 ## Open the Tekton Dashboard
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+
+![Dashboard homepage screenshot](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/dashboard-homepage.png)
