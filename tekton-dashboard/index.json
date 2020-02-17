@@ -21,6 +21,10 @@
       {
         "title": "Build & Deploy MyApp",
         "text": "step4.md"
+      },
+      {
+        "title": "Monitor PipelineRun & View MyApp",
+        "text": "step5.md"
       }
     ],
     "intro": {
