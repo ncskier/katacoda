@@ -15,7 +15,7 @@
         "text": "step2.md"
       },
       {
-        "title": "Create PipelineResource for MyApp",
+        "title": "Create the PipelineResource for MyApp",
         "text": "step3.md"
       },
       {
@@ -23,7 +23,7 @@
         "text": "step4.md"
       },
       {
-        "title": "Monitor PipelineRun & View MyApp",
+        "title": "Monitor the PipelineRun & View MyApp",
         "text": "step5.md"
       }
     ],

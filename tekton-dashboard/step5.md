@@ -1,7 +1,10 @@
+In this section, we will view the PipelineRun logs to monitor its progress.
+Then, we will open MyApp.
+
 ## Monitor the PipelineRun logs
 
-View the PipelineRun logs for our PipelineRun by clicking on the link in the
-creation notification at the top of the page.
+View the PipelineRun logs for the MyApp PipelineRun by clicking on the link in
+the creation notification at the top of the page.
 
 ![PipelineRun creation notification screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/pipeline-run-created-notification.png)
 

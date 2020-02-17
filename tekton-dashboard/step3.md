@@ -1,5 +1,5 @@
-In this section, we will create the PipelineResource for MyApp. We will later
-use this PipelineResource to run our Pipeline to build and deploy MyApp.
+In this section, we will create the git PipelineResource for MyApp. We will
+later use this PipelineResource to run the Pipeline to build and deploy MyApp.
 
 ## Navigate to the PipelineResources page
 
@@ -36,3 +36,5 @@ The form should look like the following:
 ![Create PipelineResource form screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/create-pipeline-resource-form.png)
 
 Click the `Create` button to create the PipelineResource.
+
+![Created PipelineResource screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/created-pipeline-resource.png)

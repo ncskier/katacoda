@@ -1,9 +1,6 @@
-In this section, we will create the PipelineRun to build and deploy MyApp. Then,
-we will view the PipelineRun to monitor its progress.
+In this section, we will create the PipelineRun to build and deploy MyApp.
 
-## Create the PipelineRun to build and deploy MyApp
-
-### Navigate to the PipelineRuns page
+## Navigate to the PipelineRuns page
 
 Click on the following link to go directly to the PipelineRuns page in the
 Dashboard:
@@ -13,7 +10,7 @@ Or navigate to the `default` Namespace's PipelineRuns page.
 
 ![Navigate to PipelineRuns page screenshot](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/pipeline-runs-page.png)
 
-### Create the PipelineRun
+## Create the PipelineRun
 
 Click on the blue `Create +` button in the upper right section of the page.
 
