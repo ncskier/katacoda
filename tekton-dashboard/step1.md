@@ -1,5 +1,13 @@
 In this section, we will install and expose the Tekton Dashboard.
 
+## Katacoda Kubernetes Cluster
+
+It might take a minute or two for Katacoda to initialize your Kubernetes
+cluster. When your cluster has been initialized, the
+`kubectl cluster-info`{{execute}} command will return the cluster info.
+
+Now, let's begin!
+
 ## Install the Tekton Dashboard Prerequisites
 
 - Tekton Pipelines
@@ -63,6 +71,9 @@ Verify the Ingress was created:
 
 ## Open the Tekton Dashboard
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+Open the `Dashboard` tab in your Katacoda window, or click on the following link:
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/.
+
+It might take a minute for the ingress and Katacoda to get set up.
 
 ![Dashboard homepage screenshot](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/dashboard-homepage.png)

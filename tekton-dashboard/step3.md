@@ -1,47 +1,38 @@
-## Create a PipelineRun to run MyApp's Pipeline
+In this section, we will create the PipelineResource for MyApp. We will later
+use this PipelineResource to run our Pipeline to build and deploy MyApp.
 
-```bash
-cat << EOF | kubectl apply -f -
-apiVersion: tekton.dev/v1alpha1
-kind: PipelineRun
-metadata:
-  name: myapp
-spec:
-  pipelineRef:
-    name: myapp
-  resources:
-    - name: source
-      resourceSpec:
-        type: git
-        params:
-          - name: revision
-            value: master
-          - name: url
-            value: https://github.com/ncskier/myapp
-EOF
-```{{execute}}
+## Navigate to the PipelineResources page
 
-## Monitor the PipelineRun logs
+Click on the following link to go directly to the PipelineResources page in the
+Dashboard:
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/#/namespaces/default/pipelineresources
 
-Click on the following link to go directly to the `myapp` PipelineRun
-logs page:
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/#/namespaces/default/pipelineruns/myapp
-
-Or navigate to the `myapp` PipelineRun in the `default` Namespace's PipelineRuns
-list.
+Or navigate to the `default` Namespace's PipelineResources page in the Dashboard.
 
 *Make sure the `default` Namespace is selected in the Namespace dropdown.*
 
-![Navigate to MyApp PipelineRun screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/navigate-to-myapp-pipelinerun.png)
+![Navigate to PipelineResources page screenshot](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/pipeline-resources-page.png)
 
-![View the running PipelineRun logs for MyApp screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/myapp-pipelinerun-logs-running.png)
+## Create the PipelineResource
 
-## Open the Deployed App
+Click on the blue `Create +` button in the upper right section of the page.
 
-Verify both the `build` and `deploy` tasks have passed.
+This opens a form to create a PipelineResource. We want to create a git
+PipelineResource for the `master` branch of MyApp in the `default` namespace.
+So, fill in the form with the following information:
 
-![View the completed PipelineRun logs for MyApp screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/view-myapp-pipelinerun-logs.png)
+Name: `myapp`{{copy}}
 
-MyApp will be running on port `3000`. Click on the following link to open the
-app:
-https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
+Namespace: `default`
+
+Type: `Git`
+
+URL: `https://github.com/ncskier/myapp`{{copy}}
+
+Revision: `master`{{copy}}
+
+The form should look like the following:
+
+![Create PipelineResource form screenshot.](https://raw.githubusercontent.com/ncskier/katacoda/master/tekton-dashboard/images/create-pipeline-resource-form.png)
+
+Click the `Create` button to create the PipelineResource.

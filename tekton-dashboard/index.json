@@ -15,8 +15,12 @@
         "text": "step2.md"
       },
       {
-        "title": "Build & Deploy MyApp",
+        "title": "Create PipelineResource for MyApp",
         "text": "step3.md"
+      },
+      {
+        "title": "Build & Deploy MyApp",
+        "text": "step4.md"
       }
     ],
     "intro": {
