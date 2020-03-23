@@ -10,17 +10,19 @@ Now, let's begin!
 
 ## Install the Tekton Dashboard Prerequisites
 
-- Tekton Pipelines
-`kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml`{{execute}}
-- Tekton Triggers (optional)
-`kubectl apply --filename https://storage.googleapis.com/tekton-releases/triggers/latest/release.yaml`{{execute}}
+- [Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/master/docs/install.md)
+`kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/previous/v0.10.1/release.yaml`{{execute}}
+- [Tekton Triggers](https://github.com/tektoncd/triggers/blob/master/docs/install.md) (optional)
+`kubectl apply --filename https://storage.googleapis.com/tekton-releases/triggers/previous/v0.3.1/release.yaml`{{execute}}
 
 Verify the pods are running:
 `kubectl get pods -n tekton-pipelines`{{execute}}
 
 ## Install the Tekton Dashboard
 
-`kubectl apply --filename https://github.com/tektoncd/dashboard/releases/download/v0.5.1/tekton-dashboard-release.yaml`{{execute}}
+For reference, the installation instructions are [here](https://github.com/tektoncd/dashboard#install-dashboard). To install the Tekton Dashboard, run the following
+command:
+`kubectl apply --filename https://storage.googleapis.com/tekton-releases/dashboard/previous/v0.5.3/tekton-dashboard-release.yaml`{{execute}}
 
 <!-- `kubectl apply --filename https://storage.googleapis.com/tekton-releases/dashboard/latest/release.yaml`{{execute}} -->
 
