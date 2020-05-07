@@ -36,8 +36,7 @@ Verify the Dashboard pod is running:
 Install the nginx ingress controller into the `ingress-nginx` namespace:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud-generic.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 ```{{execute}}
 
 Verify the ingress controller pod is running:
